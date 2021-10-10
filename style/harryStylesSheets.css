@@ -1,0 +1,32 @@
+h1,
+h2,
+h3 {
+    background-color: gold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: blue;
+    font-weight: 1000;
+}
+
+.rightSide {
+    position: absolute;
+    top: 900px;
+    right: 20px;
+    text-align: right;
+    font-size: small;
+}
+.rightSide2 {
+    position: absolute;
+    top: 920px;
+    right: 120px;
+    text-align: right;
+    font-size: small;
+}
+
+
+.chart-container {
+    position: absolute;
+
+    height: 40vh;
+    width: 40vw;
+}

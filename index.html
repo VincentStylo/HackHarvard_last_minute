@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="/style/harryStylesSheets.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <title> Mission Failed! </title>
+</head>
+
+<body>
+    <h1> &#128532; Did your project not work? &#128532;</h1>
+    <h2> Feeling pretty bummed about it?</h1>
+        <h3> Here, listen to this as many times as you need to:</h3>
+        <center><iframe width="788" height="443" src="https://www.youtube.com/embed/5OS-ZXMZOO8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe> </center>
+        <h3> Don't worry champ, you'll get them next time, just learn databases before the competition next time
+            alright?</h3>
+            <div class="chart-container">
+                <canvas id="myChart"> </canvas>
+            </div>
+
+            <h3 class="rightSide"> Here is chart of how valid you feel about being sad your project didn't work, on a scale of 0-100</h3>
+            <h3 class="rightSide2"> See? It's going to be alright, the graph even told you that it's okay</h3>
+        <script>
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Valid'],
+                    datasets: [{
+                        label: 'How Valid You are in Being Sad',
+                        data: [100],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)'
+                        ],
+                        borderColor: [
+                            
+                            'rgba(255, 159, 64, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        </script>
+
+</html>
