@@ -21,10 +21,13 @@ h1,h2,h3 {
     font-size: small;
 }
 
-
 .chart-container {
     position: absolute;
 
     height: 40vh;
     width: 40vw;
+}
+
+.videoFormat {
+    align-content: center;
 }
